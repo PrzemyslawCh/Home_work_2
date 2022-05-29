@@ -1,11 +1,5 @@
-from unittest import result
 import numpy
 import matplotlib.pyplot as plt
-
-xw = [-2, 1, 4]
-yw = [5, 3, 7]
-x = [3,4,6,7]
-n = 3
 
 def Chachaj_Przemyslaw_Lagrange(x, xw, yw, n):
 
@@ -26,7 +20,6 @@ def Chachaj_Przemyslaw_Lagrange(x, xw, yw, n):
 
   return result
 
-
 def Efekt_Runge(k):
   x = numpy.linspace(-1, 1, num=101)
   y = abs(x)
@@ -43,6 +36,11 @@ def Efekt_Runge(k):
     plt.plot(x, Z)
 
   plt.show()
+
+xw = [-2, 1, 4]
+yw = [5, 3, 7]
+x = [3,4,6,7]
+n = 3
     
 print(Chachaj_Przemyslaw_Lagrange(x, xw, yw, n))
 print(Efekt_Runge(5))

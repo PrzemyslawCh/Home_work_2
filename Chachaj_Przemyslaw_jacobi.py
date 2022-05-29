@@ -1,15 +1,5 @@
 import math
-
-from cmath import sqrt
-
 from numpy import linalg
-
-A = [[4,-1,-1,0],
-    [-1,4,0,-1],
-    [-1,0,4,-1],
-    [0,-1,-1,4]]
-
-b = [1,2,0,1]
 
 def norm(x1, x0):
   Euclid_norm = 0
@@ -58,5 +48,11 @@ def Chachaj_Przemyslaw_jacobi(A,b,eps):
 
   return x
 
+A = [[4,-1,-1,0],
+    [-1,4,0,-1],
+    [-1,0,4,-1],
+    [0,-1,-1,4]]
+
+b = [1,2,0,1]
 
 print(Chachaj_Przemyslaw_jacobi(A, b, 1))
